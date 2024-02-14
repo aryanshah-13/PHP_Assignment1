@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriber Portal Form</title>
+</head>
+<body>
+    <header>
+        <h1>SUBSCRIBER PORTAL FORM</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="connect.php" method="post">
+        <section id = "section1">
+            <!-- Taking Personal Information -->
+            <h3>Personal Information: </h3>
+
+            <!-- Taking the first name of the user in a text box -->
+            <label for="firstName">First Name: </label>
+            <input type="text" name="firstName" id="firstName" required> <br>
+
+            <!-- Taking the last name of the user in a text box -->
+            <label for="lastName">Last Name: </label>
+            <input type="text" name="lastName" id="lastName" required> <br>
+
+            <!-- Taking the age of the user in radio buttons -->
+            <p>Age: </p>
+
+                <!-- Age 18 to 25 -->
+                <input type="radio" name="age" id="18to25" value="18 to 25" required>
+                <label for="18to25">18 to 25</label> <br>
+
+                <!-- Age 25 to 35 -->
+                <input type="radio" name="age" id="25to35" value="25 to 35" required>
+                <label for="25to35">25 to 35</label> <br>
+
+                <!-- Age 35 to 45 -->
+                <input type="radio" name="age" id="35to45" value="35 to 45" required>
+                <label for="35to45">35 to 45</label> <br>
+
+                <!-- Age 45 to 55 -->
+                <input type="radio" name="age" id="45to55" value="45 to 55" required>
+                <label for="45to55">45 to 55</label> <br>
+
+                <!-- age 55 to 65 -->
+                <input type="radio" name="age" id="55to65" value="55 to 65" required> 
+                <label for="55to65">55 to 65</label> <br>
+
+                <!-- Age 65 and above -->
+                <input type="radio" name="age" id="65+" value="65+" required>
+                <label for="65+">65+</label> <br> 
+
+            <!-- Taking the email from the user -->
+            <label for="email">Email: </label> 
+            <input type="email" name="Email" id="email" required> <br>
+
+            <!-- Taking the address of the user -->
+            <label for="Address">Address: </label>
+            <textarea name="Address" id="Address" cols="30" rows="3" required></textarea> <br>
+
+            <!-- Taking a brief description of themselves from the user -->
+            <label for="personality">Give a brief description of yourself: </label><textarea name="personality" id="personality" cols="30" rows="10"></textarea> <br>
+        </section>
+
+       
+        <section id = "section3">
+
+            <!-- Taking specific interests of the user -->
+            <h3>Specific Interests: </h3>
+            <p>(Choose the most appropriate options to you)</p> 
+        
+            <!-- Interests related to entertainment -->
+            <p>Entertainment: </p> 
+            <input type="radio" name="entertainment" id="movies" value="movies"> <label for="movies">Movies</label> <br>
+            <input type="radio" name="entertainment" id="tv shows" value="tv shows"> <label for="tv shows">TV shows</label> <br>
+            <input type="radio" name="entertainment" id="video games" value="video games"> <label for="video games">Video games</label> <br>
+
+            <!-- Interests related to sports -->
+            <p>Sports: </p>
+            <input type="radio" name="sports" id="basketball" value="basketball"> <label for="basketball">Basketball</label> <br>
+            <input type="radio" name="sports" id="football" value="football"> <label for="football">Football</label> <br>
+            <input type="radio" name="sports" id="soccer" value="soccer"> <label for="soccer">Soccer</label> <br>
+            <input type="radio" name="sports" id="tennis" value="tennis"> <label for="tennis">Tennis</label> <br>
+            <input type="radio" name="sports" id="cricket" value="cricket"> <label for="cricket">Cricket</label> <br>
+
+            <!-- Interests related to books and literature -->
+            <p>Books and Literature: </p>
+            <input type="radio" name="books" id="fiction" value="fiction"> <label for="fiction">Fiction</label> <br>
+            <input type="radio" name="books" id="non fiction" value="non fiction"> <label for="non fiction">Non-fiction</label> <br>
+            <input type="radio" name="books" id="mystery" value="mystery"> <label for="mystery">Mystery</label> <br>
+            <input type="radio" name="books" id="science fiction" value="science fiction"> <label for="science fiction">Science-fiction</label> <br>
+
+            <!-- Interests related to food and drink -->
+            <p>Food and Drink: </p>
+            <input type="radio" name="food" id="Italian" value="italian"> <label for="Italian">Italian</label> <br>
+            <input type="radio" name="food" id="Mexican" value="mexican"> <label for="Mexican">Mexican</label> <br>
+            <input type="radio" name="food" id="Indian" value="indian"> <label for="Indian">Indian</label> <br>
+            <input type="radio" name="food" id="japanese" value="japanese"> <label for="japanese">Japanese</label> <br>
+            <input type="radio" name="food" id="Mediterranean" value="mediterranean"> <label for="Mediterranean">Mediterranean</label> <br>
+
+           
+        </section>
+
+        <!-- Submit button -->
+        <button>Submit</button>
+        
+    </form>
+
+    <footer>
+        <div>
+            <p>Contact us: aryanshah2125@gmail.com | Phone: *** - 662 - 3591</p>
+        </div>
+        <div>
+            <p>&copy; 2024 Subscriber portal form. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
